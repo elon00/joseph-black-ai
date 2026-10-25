@@ -1,0 +1,51 @@
+{
+  "mcpServers": {
+    "joseph-black-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "TITAN_PROTOCOL": "JOSEPHBLACK",
+        "TARGET_CHAIN": "Sui",
+        "FIPS_203_LEVEL": "ML-KEM-768",
+        "FIPS_204_LEVEL": "ML-DSA-65"
+      },
+      "tools": [
+        {
+          "name": "calculate_latent_heat_of_fusion",
+          "description": "Calculates heat energy absorbed during isothermal ice-to-water phase transition without temperature rise",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "ice_mass_g": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "ice_mass_g"
+            ]
+          }
+        },
+        {
+          "name": "isolate_fixed_air_carbon_dioxide",
+          "description": "Measures volumetric precipitation of carbon dioxide gas from chalk using acid neutralization",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "carbonate_mass_g": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "carbonate_mass_g"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
